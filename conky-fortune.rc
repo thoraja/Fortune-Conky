@@ -1,0 +1,31 @@
+#window
+own_window yes
+own_window_type normal
+own_window_class Conky
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual yes
+own_window_argb_value 0
+own_window_transparent yes
+double_buffer yes
+
+#position
+alignment top_left
+gap_x 30
+gap_y 30
+
+#font
+use_xft yes
+xftfont Tlwg Typewriter:bold:size=14
+xftalpha 0.8
+
+#color
+default_color efefef
+update_interval 1.0
+
+#borders
+border_width 5
+draw_borders yes
+
+#replace 300 with any time in seconds
+TEXT
+${execi 300 fortune my-quotes}
